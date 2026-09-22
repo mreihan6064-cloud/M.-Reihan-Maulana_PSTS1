@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    
+    <div class="bg-blue-600 text-white rounded-lg p-6 mb-8 text-center shadow-md">
+        <h1 class="text-xl font-bold mb-2">
+            School Event Registration
+        </h1>
+        <p class="text-lg">
+            Sign up to join exciting seminars, workshops, and competitions!
+        </p>
+      </div>
+
+      <!-- MAIN CONTENT -->
+    <main class="container mx-auto px-6 py-8">
+
+        <div >
+
+            <!-- REGISTRATION FORM -->
+            <section class="bg-white p-6 rounded-lg shadow">
+
+                <h2 class="text-2xl font-bold mb-6">
+                    Registration Form
+                </h2>
+
+                <form>
+
+                    <!-- NAME -->
+                    <div class="mb-5">
+
+                        <label class="block font-semibold mb-2">
+                            Student Name
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter your full name"
+                            class="w-full border border-gray-300 p-3 rounded"
+                        >
+
+                    </div>
+
+                    <div class="mb-5">
+
+                        <label class="block font-semibold mb-2">
+                            Class
+                        </label>
+
+                        <select
+                            class="w-full border border-gray-300 p-3 rounded">
+                            <option>X</option>
+                            <option>XI</option>
+                            <option>XII</option>
+                        </select>
+                    </div>
+
+
+                    <!-- GENDER -->
+                    <div class="mb-5">
+
+                        <label class="block font-semibold mb-2">
+                            Gender
+                        </label>
+
+                        <div class="flex gap-6">
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                >
+                                Male
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                >
+                                Female
+                            </label>
+
+                        </div>
+
+                    </div>
+        <div class="mb-5">
+            <label class="block font-semibold mb-2">
+                Competition Category
+            </label>
+            <select class="w-full border rounded-md p-3 shadow-sm focus:ring-2 focus:ring-purple-400">
+              <option>Web Development</option>
+              <option>Iot Project</option>
+              <option>Graphic Design</option>
+              <option>Public Speaking</option>
+              <option>Photografy</option>
+            </select>
+          </div>
+
+                    <div class="mb-6">
+
+                        <label class="block font-semibold mb-2">
+                            Participation Type
+                        </label>
+
+                        <div class="flex gap-6">
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                >
+                                Individual
+                            </label>
+
+                            <label>
+                                <input
+                                    type="radio"
+                                    name="gender"
+                                >
+                                Team
+                            </label>
+
+                        </div>
+                    </div>
+
+                    <!-- NAME -->
+                    <div class="mb-5">
+
+                        <label class="block font-semibold mb-2">
+                            Team Name
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter your team's name"
+                            class="w-full border border-gray-300 p-3 rounded"
+                        >
+
+                    </div>
+
+
+                    <!-- PHONE -->
+                    <div class="mb-5">
+
+                        <label class="block font-semibold mb-2">
+                            Phone Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            placeholder="08xxxxxxxxxx"
+                            class="w-full border border-gray-300 p-3 rounded"
+                        >
+
+                    </div>
+
+
+                    <!-- PROJECT DESCRIPTION -->
+                    <div class="mb-5">
+
+                        <label class="block font-semibold mb-2">
+                            Project Description
+                        </label>
+
+                        <textarea
+                            rows="4"
+                            placeholder="Describe your project..."
+                            class="w-full border border-gray-300 p-3 rounded"
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- BUTTON -->
+                    <button 
+                        type="submit"
+                        class="w-full bg-blue-600 text-white font-bold py-3 rounded"
+                    >
+                        Register Now
+                    </button>
+
+                </form>
+
+                <!-- TABLE -->
+            <section class="bg-white p-6 rounded-lg shadow mb-5">
+
+                <h2 class="text-2xl font-bold text-blue-900 mb-6">
+                    Participant Table
+                </h2>
+
+                <div class="overflow-x-auto">
+
+                    <table class="w-full border border-gray-300">
+
+                        <thead class="bg-blue-600 text-white">
+
+                            <tr>
+
+                                <th class="border p-3 text-left">
+                                    No
+                                </th>
+
+                                <th class="border p-3 text-left">
+                                    Participant
+                                </th>
+
+                                <th class="border p-3 text-left">
+                                    Class
+                                </th>
+
+                                <th class="border p-3 text-left">
+                                    Category
+                                </th>
+
+                                <th class="border p-3 text-left">
+                                    Team
+                                </th>
+
+                                <th class="border p-3 text-left">
+                                    Status
+                                </th>
+
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+
+                                <td class="border p-3">
+                                    1
+                                </td>
+
+                                <td class="border p-3">
+                                    Ahmad Fauzan
+                                </td>
+
+                                <td class="border p-3">
+                                    X
+                                </td>
+
+                                <td class="border p-3">
+                                    Web Development
+                                </td>
+
+                                <td class="border p-3">
+                                    Codex
+                                </td>
+
+                                <td class="border p-3">
+                                    Registered
+                                </td>
+
+                            </tr>
+
+
+                            <tr>
+
+                                <td class="border p-3">
+                                    2
+                                </td>
+
+                                <td class="border p-3">
+                                    Aisyah Putri
+                                </td>
+
+                                <td class="border p-3">
+                                    XI
+                                </td>
+
+                                <td class="border p-3">
+                                    Iot Project
+                                </td>
+
+                                <td class="border p-3">
+                                    SmartTech
+                                </td>
+                                <td class="border p-3">
+                                    Pending
+                                </td>
+
+                            </tr>
+
+
+                            
+
+
+                            
+
+                        </tbody>
+
+                    </table>
+      
+    
+
+
+            
+</body>
+</html>
